@@ -214,6 +214,10 @@ const routes = [
     name: "Download",
     href: "/download",
   },
+  {
+    name: "Forum",
+    href: "https://forum.droposs.org/"
+  }
 ];
 
 const quickstartLink = "https://wiki.droposs.org/guides/quickstart.html";

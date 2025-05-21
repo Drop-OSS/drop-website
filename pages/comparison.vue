@@ -17,21 +17,21 @@
         in use-case and features.
       </p>
       <div class="mt-8 rounded-md bg-blue-600/20 backdrop-blur p-4">
-        <div class="flex">
+        <div class="inline-flex ">
           <div class="shrink-0">
             <InformationCircleIcon
               class="size-5 text-blue-400"
               aria-hidden="true"
             />
           </div>
-          <div class="ml-3 flex-1 md:flex md:justify-between">
-            <p class="text-sm text-blue-400">
+          <div class="ml-3 flex-1 md:flex md:flex-col md:justify-between">
+            <p class="text-sm text-blue-200">
               This comparison was made by the Drop team, and may inaccurately
               represent some options. If you are a developer or maintainer for
               one of these projects, feel free to reach out to us to get your
               project removed or updated.
             </p>
-            <p class="mt-3 text-sm md:ml-6 md:mt-0">
+            <p class="mt-3 text-sm inline-flex items-center">
               <NuxtLink
                 href="https://github.com/Drop-OSS/drop-website"
                 target="_blank"
