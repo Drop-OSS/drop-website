@@ -15,7 +15,7 @@
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <NuxtLink
-            href="https://wiki.droposs.org/guides/quickstart.html"
+            href="https://docs.droposs.org/docs/guides/quickstart"
             class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
             >Quickstart &rarr;</NuxtLink
           >

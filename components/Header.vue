@@ -90,7 +90,7 @@
       <div class="hidden lg:flex" />
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <NuxtLink
-          href="https://wiki.droposs.org/guides/quickstart.html"
+          href="https://docs.droposs.org/docs/guides/quickstart"
           class="text-sm/6 font-semibold text-zinc-100"
           >Quickstart <span aria-hidden="true">&rarr;</span></NuxtLink
         >
@@ -206,21 +206,21 @@ const routes = [
     name: "Comparison",
     href: "/comparison",
   },
-  // {
-  //   name: "Documentation",
-  //   href: "https://wiki.droposs.org/",
-  // },
+  {
+    name: "Documentation",
+    href: "https://docs.droposs.org/",
+  },
   {
     name: "Download",
     href: "/download",
   },
   {
     name: "Forum",
-    href: "https://forum.droposs.org/"
-  }
+    href: "https://forum.droposs.org/",
+  },
 ];
 
-const quickstartLink = "https://wiki.droposs.org/guides/quickstart.html";
+const quickstartLink = "https://docs.droposs.org/docs/guides/quickstart";
 
 const features = [
   {

@@ -119,7 +119,7 @@
         </p>
         <div class="mt-8">
           <NuxtLink
-            href="https://wiki.droposs.org/guides/quickstart.html"
+            href="https://docs.droposs.org/docs/guides/quickstart"
             class="text-sm/6 font-semibold text-zinc-100"
             >Quickstart <span aria-hidden="true">&rarr;</span></NuxtLink
           >
