@@ -208,7 +208,7 @@
 <script setup lang="ts">
 import { ArrowDownTrayIcon, UserGroupIcon } from "@heroicons/vue/24/outline";
 
-const imageNames = ["hzd.png", "store.png", "hl.png"];
+const imageNames = ["store.png", "storepage.png", "library.png", "news.png", "company.png"];
 
 const desktopImages = computed(() =>
   imageNames.map((e) => `/images/carousel/${e}`)
