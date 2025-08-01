@@ -289,6 +289,7 @@ const projects = [
     ],
   },
 
+  /*
   {
     name: "LANCommander",
     description: "An open-source digital game platform.",
@@ -301,6 +302,7 @@ const projects = [
       { description: "P2P downloads & VPN networking", comingsoon: true },
     ],
   },
+  */
 ] as const;
 type Names = (typeof projects)[number]["name"];
 const sections: Array<{
