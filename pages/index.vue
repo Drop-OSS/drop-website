@@ -105,7 +105,7 @@
                 Simple and powerful game updates
               </p>
               <p class="mt-2 max-w-lg text-sm/6 text-zinc-400">
-                Drop was build to make it easy to apply updates for your game
+                Drop was built to make it easy to apply updates for your game
                 library. Using 'delta' versions, you can easily apply new game
                 files over the top of existing files.
               </p>
