@@ -312,16 +312,16 @@ const v020 = {
 
 const v030 = {
   windows:
-    "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.0/Drop.Desktop.Client_0.3.0_x64-setup.exe",
+    "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.2/Drop.Desktop.Client_0.3.2_x64-setup.exe",
   macos: {
-    x64: "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.0/Drop.Desktop.Client_0.3.0_x64.dmg",
+    x64: "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.2/Drop.Desktop.Client_0.3.2_x64.dmg",
     aarch64:
-      "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.0/Drop.Desktop.Client_0.3.0_aarch64.dmg",
+      "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.2/Drop.Desktop.Client_0.3.2_aarch64.dmg",
   },
   linux: {
-    x64: "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.0/Drop.Desktop.Client_0.3.0_amd64.AppImage",
+    x64: "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.2/Drop.Desktop.Client_0.3.2_amd64.AppImage",
     aarch64:
-      "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.0/Drop.Desktop.Client_0.3.0_aarch64.AppImage",
+      "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.2/Drop.Desktop.Client_0.3.2_aarch64.AppImage",
   },
 };
 </script>
