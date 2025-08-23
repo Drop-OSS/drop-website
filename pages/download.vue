@@ -80,7 +80,7 @@
 
       <!-- Client Downloads -->
       <div
-        v-if="selectedVersion == 'v0.3.0'"
+        v-if="selectedVersion == 'v0.3.2'"
         class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
       >
         <!-- Windows -->
@@ -299,7 +299,7 @@ import {
 import { ChevronUpDownIcon } from "@heroicons/vue/16/solid";
 import { CheckIcon } from "@heroicons/vue/20/solid";
 
-const versions = ["v0.3.0", "v0.2.0"];
+const versions = ["v0.3.2", "v0.2.0"];
 const selectedVersion = ref(versions[0]);
 
 const v020 = {
