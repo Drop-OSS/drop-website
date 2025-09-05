@@ -1,0 +1,47 @@
+---
+title: 2025 Roadmap
+date: 2025-09-03
+image: /news/roadmap-sep32025.png
+author: decduck
+tags: Roadmap, Planning
+---
+
+As 2025 draws to a close, we've thought about where we want Drop to be by the end of the year. As a project, we've come a long way since our first commit in [September of 2024](https://github.com/Drop-OSS/drop/commit/e1a789fa363946f74ecc21b9800c7e84563b46c3). Since then, we've had three, major releases (v0.1.0, v0.2.0, v0.3.0), each time adding lots of cool new features. With that in mind, here's what we're planning to do before the year's end - no promises, though.
+
+---
+
+## Redistributable support
+
+Redistributables are generally library/framework files that need to be installed before a game will run. Often games on Steam will automatically install things like the "Visual C++ Redistributable", or similar, to ensure the game works properly and has all the installed libraries it needs.
+
+Drop extends this traditional idea of 'redistributables' into a general idea - anything that only needs to be downloaded for several games. Drop will also support attaching launch commands to these redistributables for one specific purpose:
+
+## Emulation support
+
+Through the redistributable system described above, admins will be able to add and import their favourite emulators as a "redistributable", and configure a launch command. That may look something like this:
+
+```
+MyEmulator.exe --rom-file {rom} --fullscreen
+```
+
+And then you'll be able to configure this redistributable as a platform. You'll be able to specify file extensions, name the platform, and attach an SVG icon as metadata. Then, when you import an emulated game, Drop will automatically download the emulator and use the above launch command to start your game.
+
+For admins, Drop will automatically search for files with the extensions provided and add it to the existing file-extension based suggestions for imports.
+
+This system, while may seem a little complicated, has the following benefits:
+
+1. **Drop doesn't need specific integration with most emulators.** Most emulators have a CLI (command line interface), even if the documentation for it is a little buried. This means admins will be able to get almost any emulator working without writing any new code.
+2. **More flexibility than just emulators.** Lots of other useful tools and applications fit into this model. Your favourite optimisation tool, tracking tool, mod launcher, what have you - all can be done through this system.
+3. **Better UX and control for admins.** Rather than Drop hardcoding a massive list of emulation targets that are available, and developers having to maintain that list, Drop allows admins to use only what they need, and fix things themselves.
+
+## Playtime tracking
+
+Drop will being tracking and syncing playtime statistics with the configured server. Under the hood, each play 'session' will be tracked individually, even if Drop only displays aggregated amounts.
+
+This opens up the potential for cool statistics down the line. We don't have many ideas, but features like "What are my friends playing?" and "Am I burning out?" come to mind. Endless possibilities.
+
+---
+
+Unfortunately, as it is for most people, these coming months will be very busy for the team, so we may not get to everything on this list. But who knows, maybe we'll complete it and more?
+
+Regardless, Drop's future development is secure, and we're excited to be implementing new and awesome features for people to enjoy.
