@@ -2,7 +2,6 @@
 
 import * as Headless from '@headlessui/react'
 import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
-import { Octokit } from '@octokit/core'
 import { clsx } from 'clsx'
 import {
   MotionValue,
@@ -179,6 +178,7 @@ export function Sponsors() {
             }) satisfies Sponsor,
         )
 
+      /*
       const octokit = new Octokit({})
       const data: {
         user: {
@@ -214,6 +214,9 @@ export function Sponsors() {
               from: 'GitHub Sponsors',
             }) satisfies Sponsor,
         )
+            */
+
+      const githubSponsors: Sponsor[] = []
 
       const sponsors = [...githubSponsors, ...ocSponsors]
       window.localStorage.setItem(
