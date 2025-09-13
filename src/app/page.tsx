@@ -11,7 +11,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'Drop is an open-source, self-hostabled alternative to platforms like Steam and Epic Games.',
 }
 
 function Hero() {
