@@ -29,7 +29,7 @@ function Hero() {
             Steam and Epic.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
+            <Button href="https://docs.droposs.org/docs/guides/quickstart">Get started</Button>
             <Button variant="secondary" href="/about">
               About
             </Button>
