@@ -170,7 +170,7 @@ const downloads: {
       },
       'v0.3.3': {
         x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_amd64.deb',
-        ARM: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_aarch64.dmg',
+        ARM: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_arm64.deb',
       },
     },
   },
