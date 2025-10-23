@@ -123,10 +123,12 @@ const projects: Array<{
         'Archives support': '.zip',
       },
       Metadata: {
+        "Additional with plugins": false,
         IGDB: true,
         GiantBomb: true,
         PCGamingWiki: true,
         Manual: true,
+        Steam: true,
       },
       Clients: {
         Windows: true,
@@ -182,13 +184,15 @@ const projects: Array<{
             .join(' '),
       },
       Metadata: {
+        "Additional with plugins": true,
         IGDB: true,
         Manual: true,
+        VNDB: "Community plugin"
       },
       Clients: {
         Windows: true,
-        Linux: 'Possible, unsupported',
-        macOS: 'Possible, unsupported',
+        Linux: true,
+        macOS: true,
       },
       Authentication: {
         Simple: true,
@@ -198,6 +202,7 @@ const projects: Array<{
         'Cloud saves': GameVaultPlus,
       },
       'Client Features': {
+        'Multi-server': true,
         Theming: GameVaultPlus,
         'Multi-profile usage': GameVaultPlus,
         'Playnite integration': GameVaultPlus,
