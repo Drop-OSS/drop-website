@@ -8,13 +8,13 @@ import {
   ListboxOptions,
 } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/16/solid'
+import Link from 'next/link'
 import { useState, type JSX } from 'react'
 import { Button } from './button'
 import { Container } from './container'
 import { Heading } from './text'
-import Link from 'next/link'
 
-type Version = 'v0.2.0' | 'v0.3.0' | 'v0.3.1' | 'v0.3.2' | 'v0.3.3'
+type Version = 'v0.2.0' | 'v0.3.0' | 'v0.3.1' | 'v0.3.2' | 'v0.3.3' | 'v0.3.4'
 type Platforms = 'Windows' | 'Linux' | 'macOS'
 type Arch = 'x86' | 'ARM'
 
@@ -24,6 +24,7 @@ const releasePages: { [key in Version]: string } = {
   'v0.3.1': 'https://github.com/Drop-OSS/drop-app/releases/tag/v0.3.1',
   'v0.3.2': 'https://github.com/Drop-OSS/drop-app/releases/tag/v0.3.2',
   'v0.3.3': 'https://github.com/Drop-OSS/drop-app/releases/tag/v0.3.3',
+  'v0.3.4': 'https://github.com/Drop-OSS/drop-app/releases/tag/v0.3.4',
 }
 
 function WindowsIcon() {
@@ -144,6 +145,10 @@ const downloads: {
         x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_x64-setup.exe',
         ARM: undefined,
       },
+      'v0.3.4': {
+        x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_x64-setup.exe',
+        ARM: undefined,
+      },
     },
   },
   Linux: {
@@ -172,6 +177,10 @@ const downloads: {
         x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_amd64.deb',
         ARM: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_arm64.deb',
       },
+      'v0.3.4': {
+        x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_amd64.deb',
+        ARM: undefined,
+      },
     },
   },
   macOS: {
@@ -198,6 +207,10 @@ const downloads: {
       'v0.3.3': {
         x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_x64.dmg',
         ARM: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_aarch64.dmg',
+      },
+      'v0.3.4': {
+        x86: undefined,
+        ARM: undefined,
       },
     },
   },
@@ -291,10 +304,13 @@ export default function DownloadCards() {
             <DownloadCard key={platform} data={data} version={currentVersion} />
           ))}
         </div>
-        <div className='mt-6 flex justify-center'>
-            <Link href={releasePages[currentVersion]} className='text-xs font-semibold text-gray-500 hover:text-gray-600 hover:underline'>
-                Open GitHub releases page &rarr;
-            </Link>
+        <div className="mt-6 flex justify-center">
+          <Link
+            href={releasePages[currentVersion]}
+            className="text-xs font-semibold text-gray-500 hover:text-gray-600 hover:underline"
+          >
+            Open GitHub releases page &rarr;
+          </Link>
         </div>
       </Container>
     </div>
