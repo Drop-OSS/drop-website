@@ -120,10 +120,10 @@ const projects: Array<{
         'Non-versioned layout': true,
         'Installer/setup games': true,
         'Portable games': true,
-        'Archives support': '.zip',
+        'Archives support': 'All 7-zip formats',
       },
       Metadata: {
-        "Additional with plugins": false,
+        'Additional with plugins': false,
         IGDB: true,
         GiantBomb: true,
         PCGamingWiki: true,
@@ -177,17 +177,13 @@ const projects: Array<{
         'Non-versioned layout': true,
         'Installer/setup games': true,
         'Portable games': true,
-        'Archives support':
-          '.7z .xz .bz2 .gz .tar .zip .wim .ar .arj .cab .chm .cpio .cramfs .dmg .ext .fat .gpt .hfs .ihex .iso .lzh .lzma .mbr .msi .nsis .ntfs .qcow2 .rar .rpm .squashfs .udf .uefi .vdi .vhd .vmdk .wim .xar .z'
-            .split(' ')
-            .sort()
-            .join(' '),
+        'Archives support': 'All 7-zip formats',
       },
       Metadata: {
-        "Additional with plugins": true,
+        'Additional with plugins': true,
         IGDB: true,
         Manual: true,
-        VNDB: "Community plugin"
+        VNDB: 'Community plugin',
       },
       Clients: {
         Windows: true,
