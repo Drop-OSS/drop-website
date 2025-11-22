@@ -179,7 +179,7 @@ const downloads: {
       },
       'v0.3.4': {
         x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_amd64.deb',
-        ARM: "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_arm64.deb",
+        ARM: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_arm64.deb',
       },
     },
   },
@@ -209,8 +209,8 @@ const downloads: {
         ARM: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.3/Drop.Desktop.Client_0.3.3_aarch64.dmg',
       },
       'v0.3.4': {
-        x86: "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_x64.dmg",
-        ARM: "https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_aarch64.dmg",
+        x86: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_x64.dmg',
+        ARM: 'https://github.com/Drop-OSS/drop-app/releases/download/v0.3.4/Drop.Desktop.Client_0.3.4_aarch64.dmg',
       },
     },
   },
@@ -259,6 +259,10 @@ export default function DownloadCards() {
 
   return (
     <div className="relative py-24">
+      <pre className="hidden" id="download-matrix">
+        {JSON.stringify(downloads)}
+      </pre>
+
       <Container>
         <div className="flex flex-col items-center">
           <Listbox value={currentVersion} onChange={setCurrentVersion}>

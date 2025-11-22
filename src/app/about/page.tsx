@@ -61,14 +61,14 @@ function Header() {
             <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
               <dt className="text-sm/6 text-gray-600">Docker pulls</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0} end={12.2} decimals={1} />k
+                <AnimatedNumber start={0} end={48.8} decimals={1} />k
               </dd>
             </div>
             <div className="flex flex-col gap-y-2">
               <dt className="text-sm/6 text-gray-600">Contributors</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
                 &gt;
-                <AnimatedNumber start={0} end={10} />
+                <AnimatedNumber start={0} end={15} />
               </dd>
             </div>
           </dl>
