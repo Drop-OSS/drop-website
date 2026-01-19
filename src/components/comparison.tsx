@@ -228,6 +228,8 @@ const projects: Array<{
     features: {
       Library: {
         'Non-versioned layout': true,
+        'Automatic import': true,
+        'Archives support': 'All 7-zip formats',
       },
       Metadata: {
         IGDB: true,
@@ -242,6 +244,9 @@ const projects: Array<{
         Browser: true,
         Android: true,
         muOS: true,
+      },
+      'Client Features': {
+        'Playnite integration': true,
       },
       Authentication: {
         Simple: true,
@@ -268,7 +273,7 @@ function Header() {
         A breakdown between the different projects available to you, put
         together by the Drop OSS project.
       </Lead>
-      <Subheading className="mt-2">Last updated 02-09-2025</Subheading>
+      <Subheading className="mt-2">Last updated 19-01-2026</Subheading>
     </Container>
   )
 }
@@ -343,7 +348,7 @@ function PricingTable({
   return (
     <Container className="py-24">
       <table className="w-full text-left">
-        <caption className="sr-only">Pricing plan comparison</caption>
+        <caption className="sr-only">Project comparison</caption>
         <colgroup>
           <col className="w-3/5 sm:w-2/5" />
           <col
