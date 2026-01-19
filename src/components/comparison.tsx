@@ -230,6 +230,7 @@ const projects: Array<{
         'Non-versioned layout': true,
         'Automatic import': true,
         'Archives support': 'All 7-zip formats',
+        'Portable games': true
       },
       Metadata: {
         IGDB: true,
